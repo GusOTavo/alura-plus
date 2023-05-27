@@ -115,11 +115,6 @@ body {
     margin-top: 1em;
 }
 
-.secundario__imagem__telas {
-    width: 80%;
-    padding: 5em;
-}
-
 /* SECAO TERCIARIA */
 
 .dispositivos {
@@ -180,5 +175,36 @@ body {
 }
 
 
+/* RESPONSIVIDADE */
 
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        background-image: none;
+    }
 
+    .principal__imagem {
+        width: 50vw;
+    }
+
+    .principal__caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+}

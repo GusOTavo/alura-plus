@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* SECAO PRINCIPAL */
+
+.principal {
+    background-image: url("/assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.principal__caixa {
+    margin: 0 6em;
+}
+
+.principal__titulo {
+    color: var(--branco-principal);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.principal__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    transition: 0.25s;
+}
+
+.container__botao:hover {
+    background-color: var(--branco-principal);
+    color: var(--botao-azul);
+    transform: scale(1.05);
+}
+
+.principal__botao__primario {
+    background-color: var(--botao-azul);
+}
+
+.principal__botao__secundario {
+    background-color: none;
+    border: 2px solid var(--branco-principal)
+}
+
+.principal__texto {
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+/* SECAO SECUNDARIA */
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+    color: var(--branco-principal);
+}
+
+.secundario__imagem {
+    width: 80%;
+    padding: 2em;
+}
+
+.secundario__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+.secundario__texto {
+    color: var(--cinza-secundario);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.secundario__botao {
+    background-color: var(--botao-azul);
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.secundario__imagem__telas {
+    width: 80%;
+    padding: 5em;
+}
+
+/* SECAO TERCIARIA */
+
+.dispositivos {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+/* RODAPE */
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.item__link {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+    transition: 0.2s;
+}
+
+.item__link:hover {
+    color: var(--botao-azul);
+}
+
+.item__link:active {
+    color: rgb(105, 31, 105)
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+
+
+
